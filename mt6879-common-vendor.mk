@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/vendor.mmi.cxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.cxp.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/motorola/mt6879-common/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/mot_spn_table:$(TARGET_COPY_OUT_VENDOR)/etc/mot_spn_table \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/motorola/sensors/mot_sensor_settings.json:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/sensors/mot_sensor_settings.json \
@@ -243,7 +242,6 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libkmsetkey \
     libksensor \
-    libladder \
     libmipc \
     libmmagent \
     libmml \
@@ -314,7 +312,6 @@ PRODUCT_PACKAGES += \
     libtinyxml2-v31 \
     libtlcWidevineModularDrm \
     libtrm \
-    libudf \
     liburee_meta_drmkeyinstall \
     libvcodec_oal \
     libvcodecdrv_header_stub \
@@ -526,7 +523,6 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     vendor.mmi.cxp \
     volte_clientapi_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
     vtservice
