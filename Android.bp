@@ -682,37 +682,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSoftGatekeeper",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/libSoftGatekeeper.so",
-            ],
-            shared_libs: [
-                "libgatekeeper",
-                "libhardware",
-                "libbase",
-                "libutils",
-                "libcrypto",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.graphics.allocator@4.0-impl-mediatek",
     owner: "motorola",
     strip: {
@@ -2361,32 +2330,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_hw_test",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_hw_test.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -6032,33 +5975,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifitest",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifitest.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libnvram",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwpfa",
     owner: "motorola",
     strip: {
@@ -6121,33 +6037,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmockdrmcryptoplugin",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mediadrm",
     prefer: true,
     soc_specific: true,
 }
@@ -11782,13 +11671,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/gatekeeper.trustonic.so",
     symlink_target: "/vendor/lib64/hw/libMcGatekeeper.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_gatekeeper_default_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/gatekeeper.default.so",
-    symlink_target: "/vendor/lib64/hw/libSoftGatekeeper.so",
 }
 
 install_symlink {

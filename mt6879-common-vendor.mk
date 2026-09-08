@@ -10,9 +10,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/system/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-telephony.xml \
     vendor/motorola/mt6879-common/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/motorola/mt6879-common/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
-    vendor/motorola/mt6879-common/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
-    vendor/motorola/mt6879-common/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/aivrs.ini:$(TARGET_COPY_OUT_VENDOR)/etc/aivrs.ini \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/apdb/APDB_MT6879___W2408:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6879___W2408 \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/apdb/APDB_MT6879___W2408_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6879___W2408_ENUM \
@@ -55,8 +53,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_TELUS_Mobility.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_TELUS_Mobility.xml \
-    vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
-    vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_USC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_USC.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Virgin_Mobile.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Virgin_Mobile.xml \
@@ -136,7 +132,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.mtk_common \
     kmsetkey.trustonic \
     libMcGatekeeper \
-    libSoftGatekeeper \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     gralloc.common \
@@ -192,7 +187,6 @@ PRODUCT_PACKAGES += \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libbluetooth_audio_session_mediatek \
-    libbluetooth_hw_test \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbluetooth_relayer \
@@ -319,10 +313,8 @@ PRODUCT_PACKAGES += \
     libviagpsrpc \
     libviamipc-ril \
     libwifi-hal-mtk \
-    libwifitest \
     libwpfa \
     libwvhidl \
-    libmockdrmcryptoplugin \
     libwvdrmengine \
     meta_wifi_data \
     motrilutils \
@@ -535,7 +527,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_audio_r_submix_mt6879_so \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \
-    vendor_lib64_hw_gatekeeper_default_so \
     vendor_lib64_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
     vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
     vendor_lib64_hw_gralloc_common_so \
