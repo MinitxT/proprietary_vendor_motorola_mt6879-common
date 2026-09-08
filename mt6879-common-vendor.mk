@@ -470,6 +470,7 @@ PRODUCT_PACKAGES += \
     EuiccGoogle \
     ImsService \
     MtkGbaService \
+    MtkTelephonyAssist \
     moto-telephony \
     mediatek-ims-base \
     mediatek-ims-oem-plugin \
