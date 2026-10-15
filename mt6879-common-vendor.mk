@@ -566,5 +566,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.media.c2@1.0-service \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.1-service.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
-    vendor/motorola/mt6879-common/proprietary/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.dolby.hardware.dms.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
