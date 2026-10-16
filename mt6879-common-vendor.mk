@@ -548,3 +548,15 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libpq_prot_so \
     vendor_lib64_libpqparamparser_so \
     vendor_lib64_libpqpconfig_so
+
+PRODUCT_PACKAGES += \
+    libcodec2_store_dolby \
+    libdapparamstorage \
+    libdlbpreg \
+    vendor.dolby.dms-V1-ndk_platform \
+    vendor.dolby.hardware.dms@2.0 \
+    vendor.dolby.hardware.dms@2.1 \
+    libdlbvol \
+    libswdap \
+    libswgamedap
+
